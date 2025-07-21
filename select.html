@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Select Quiz | King Crypto Test</title>
+  <link rel="stylesheet" href="../styles/style.css" />
+  <script>
+    if (!localStorage.getItem('user')) window.location.href = '../pages/login.html';
+  </script>
+</head>
+<body class="home">
+  <div class="background-blur"></div>
+  <div class="main-content">
+    <h2>Select a Quiz</h2>
+    <ul class="btn-group">
+      <li><a href="quiz.html?subject=Phy102" class="btn">Physics 102</a></li>
+      <li><a href="quiz.html?subject=Maths102" class="btn">Mathematics 102</a></li>
+      <li><a href="quiz.html?subject=Chm142" class="btn">Chemistry 142</a></li>
+      <li><a href="quiz.html?subject=Bio102" class="btn">Biology 102</a></li>
+    </ul>
+  </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Panel | King Crypto Test</title>
+  <link rel="stylesheet" href="../styles/style.css" />
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
+  <script src="../scripts/firebaseConfig.js"></script>
+  <script src="../scripts/admin.js" defer></script>
+</head>
+<body class="home">
+  <div class="background-blur"></div>
+  <div class="main-content">
+    <h2>Admin Panel</h2>
+    <div>
+      <h3>Add Question</h3>
+      <form id="questionForm">
+        <input type="text" placeholder="Subject (e.g. Phy102)" id="subject" required /><br>
+        <input type="text" placeholder="Question" id="question" required /><br>
+        <input type="text" placeholder="Option A" id="optA" required /><br>
+        <input type="text" placeholder="Option B" id="optB" required /><br>
+        <input type="text" placeholder="Option C" id="optC" required /><br>
+        <input type="text" placeholder="Option D" id="optD" required /><br>
+        <input type="text" placeholder="Correct Answer" id="answer" required /><br>
+        <button class="btn" type="submit">Add Question</button>
+      </form>
+    </div>
+    <hr>
+    <div>
+      <h3>All Results</h3>
+      <ul id="resultsList"></ul>
+    </div>
+  </div>
+</body>
+</html>

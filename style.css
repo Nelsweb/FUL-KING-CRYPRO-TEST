@@ -1,0 +1,57 @@
+body.home {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  min-height: 100vh;
+  background: url('../assets/university.jpg') no-repeat center center/cover;
+}
+
+.background-blur {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  backdrop-filter: blur(8px);
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+.banner {
+  background: #FFD700;
+  color: black;
+  font-weight: bold;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.main-content {
+  position: relative;
+  z-index: 1;
+  margin-top: 80px;
+  padding: 20px;
+}
+
+.btn-group {
+  margin-top: 20px;
+}
+
+.btn {
+  margin: 10px;
+  padding: 14px 25px;
+  font-size: 16px;
+  background-color: #FFD700;
+  color: black;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: black;
+  color: #FFD700;
+}

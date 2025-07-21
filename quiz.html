@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Take Quiz | King Crypto Test</title>
+  <link rel="stylesheet" href="../styles/style.css" />
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
+  <script src="../scripts/firebaseConfig.js"></script>
+  <script src="../scripts/quiz.js" defer></script>
+</head>
+<body class="home">
+  <div class="background-blur"></div>
+  <div class="main-content">
+    <div id="quizBox">
+      <h2 id="subjectName">Loading Quiz...</h2>
+      <div id="timer">20:00</div>
+      <div id="questionContainer"></div>
+      <button class="btn" id="nextBtn">Next</button>
+    </div>
+    <div id="resultBox" style="display:none;">
+      <h3>Quiz Completed!</h3>
+      <p id="scoreDisplay"></p>
+      <a href="select.html" class="btn">Take Another Quiz</a>
+    </div>
+  </div>
+</body>
+</html>
